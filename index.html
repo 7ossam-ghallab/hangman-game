@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game | Hossam Ghallab</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+    <div class="container">
+      <h1 class="heading">hangman<span style="text-transform: none; font-size: 16px; letter-spacing: normal;">Game</span></h1>
+
+      <div class="details" id="details">
+        <p class="tries" id="tries">tries | <span></span></p>
+        <p class="timer" id="timer">timer | <span></span></p>
+      </div>
+
+      <div class="game">
+        <div class="handman-draw">
+          <div class="stand">
+            <div class="base"></div>
+            <div class="pillar"></div>
+            <div class="holder"></div>
+            <div class="man">
+              <div class="face"></div>
+              <div class="body"></div>
+              <div class="hands"></div>
+              <div class="legs"></div>
+            </div>
+          </div>
+        </div>
+        <div class="words-guess">
+          <div class="hint" id="hint"></div>
+          <div class="guess-letter" id="guess-letter"></div>
+          <div class="letters" id="letters">
+            
+          </div>
+        </div>
+      </div>
+
+      
+      <!-- <div class="status" id="status">
+        <h2></h2>
+      </div> -->
+
+      <div class="status" id="status">
+        <div class="data">
+          <!-- <h2 class="false">game over</h2> -->
+          <h2></h2>
+          <p class="word-status">The correct word is : <span></span></p>
+          <div class="timeAndWrongs">
+            <p class="time">Time : <span></span></p>
+            <p class="wrongs">Wrongs : <span></span></p>
+          </div>
+          <!-- <p class="score"></p> -->
+        </div>
+      </div>
+
+
+    
+    <script src="main.js"></script>
+  </body>
+</html>
